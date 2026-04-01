@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-purple-100 pt-20">
+    <section class="flex flex-col w-screen mx-auto my-auto">
+      <div class="w-150 bg-purple-400 text-center mx-auto mb-5">
+        <h1 class="text-3xl text-white">To-do list</h1>
+      </div>
+
+      <div id="toDoList" class="bg-white p-6 pt-12 pb-12">
+        <div class="flex gap-3 items-center">
+          <input type="radio" id="radioCheck" checked="false" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur?
+          </p>
+          <img src="/assets/weui--delete-on-outlined.png" alt="" width="20px" />
+        </div>
+        <div class="flex gap-3 items-center">
+          <input type="radio" id="radioCheck" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur?
+          </p>
+          <img src="/assets/weui--delete-on-outlined.png" alt="" width="20px" />
+        </div>
+        <div class="flex gap-3 items-center">
+          <input type="radio" id="radioCheck" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur?
+          </p>
+          <img src="/assets/weui--delete-on-outlined.png" alt="" width="20px" />
+        </div>
+        <div class="flex gap-3 items-center">
+          <input type="radio" id="radioCheck" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur?
+          </p>
+          <img src="/assets/weui--delete-on-outlined.png" alt="" width="20px" />
+        </div>
+      </div>
+      <button
+        class="bg-purple-400 text-white rounded-full flex p-3 w-30 mx-auto -mt-5 cursor-pointer"
+      >
+        <img src="/assets/ic--outline-plus (1).png" alt="" width="20px" />New
+        task
+      </button>
+    </section>
+
+    <div
+      class="bg-black fixed top-0 right-0 opacity-50 w-screen h-screen flex justify-center items-center"
+    >
+      <div class="bg-white w-160 h-100 mx-auto rounded-2xl shadow-md p-4"></div>
+    </div>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
