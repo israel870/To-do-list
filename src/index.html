@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="bg-purple-100 pt-20">
-    <section class="flex flex-col w-screen mx-auto my-auto">
+    <section class="flex flex-col w-screen justify-center">
       <div class="w-150 bg-purple-400 text-center mx-auto mb-5">
         <h1 class="text-3xl text-white">To-do list</h1>
       </div>
 
-      <div id="toDoList" class="bg-white p-6 pt-12 pb-12">
+      <div id="toDoList" class="bg-white p-6 pt-12 pb-12 w-150 mx-auto ">
         <div class="flex gap-3 items-center">
           <input type="radio" id="radioCheck" checked="false" />
           <p>
@@ -44,16 +44,18 @@
       </div>
       <button
         class="bg-purple-400 text-white rounded-full flex p-3 w-30 mx-auto -mt-5 cursor-pointer"
-      >
-        <img src="/assets/ic--outline-plus (1).png" alt="" width="20px" />New
-        task
+      id="newTask">
+        <img src="/assets/ic--outline-plus (1).png" alt="" width="20px" />New task
       </button>
     </section>
 
     <div
-      class="bg-black fixed top-0 right-0 opacity-50 w-screen h-screen flex justify-center items-center"
-    >
-      <div class="bg-white w-160 h-100 mx-auto rounded-2xl shadow-md p-4"></div>
+      class="bg-black/50 fixed top-0 right-0  w-screen h-screen hidden justify-center items-center backdrop-blur-md "
+    id="modalBg">
+      <div class="bg-white w-160 h-100 mx-auto rounded-2xl shadow-md p-4">
+        <input type="text" class="block border-purple-900 w-100 h-50 mx-auto border-2" id="listInput">
+        <button class="block bg-purple-500 rounded-sm w-13 text-white justify-self-end mx-10 my-5 px-3 py-1" id="addTask">Add</button>
+      </div>
     </div>
   </body>
 
