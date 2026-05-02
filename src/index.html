@@ -13,34 +13,6 @@
       </div>
 
       <div id="toDoList" class="bg-white p-6 pt-12 pb-12 w-150 mx-auto ">
-        <div class="flex gap-3 items-center">
-          <input type="radio" id="radioCheck" checked="false" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur?
-          </p>
-          <img src="/assets/weui--delete-on-outlined.png" alt="" width="20px" />
-        </div>
-        <div class="flex gap-3 items-center">
-          <input type="radio" id="radioCheck" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur?
-          </p>
-          <img src="/assets/weui--delete-on-outlined.png" alt="" width="20px" />
-        </div>
-        <div class="flex gap-3 items-center">
-          <input type="radio" id="radioCheck" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur?
-          </p>
-          <img src="/assets/weui--delete-on-outlined.png" alt="" width="20px" />
-        </div>
-        <div class="flex gap-3 items-center">
-          <input type="radio" id="radioCheck" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur?
-          </p>
-          <img src="/assets/weui--delete-on-outlined.png" alt="" width="20px" />
-        </div>
       </div>
       <button
         class="bg-purple-400 text-white rounded-full flex p-3 w-30 mx-auto -mt-5 cursor-pointer"
@@ -50,11 +22,14 @@
     </section>
 
     <div
-      class="bg-black/50 fixed top-0 right-0  w-screen h-screen hidden justify-center items-center backdrop-blur-md "
+      class="bg-black/50 fixed top-0  w-screen h-screen hidden justify-center items-center backdrop-blur-md "
     id="modalBg">
       <div class="bg-white w-160 h-100 mx-auto rounded-2xl shadow-md p-4">
-        <input type="text" class="block border-purple-900 w-100 h-50 mx-auto border-2" id="listInput">
-        <button class="block bg-purple-500 rounded-sm w-13 text-white justify-self-end mx-10 my-5 px-3 py-1" id="addTask">Add</button>
+        <input type="text" class="block border-purple-900 w-100 h-50 mx-auto border-2" id="listInput" >
+        <div class="justify-self-end mx-10 my-5 flex gap-3">
+        <button class="block bg-purple-500 rounded-sm w-18 text-white  px-3 py-1" id="closeModal">Cancel</button>
+        <button class="block bg-purple-500 rounded-sm w-13 text-white  px-3 py-1" id="addTask">Add</button>
+        </div>
       </div>
     </div>
   </body>
